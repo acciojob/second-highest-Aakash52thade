@@ -10,6 +10,12 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			if (arr.length < 2) return Infinity; // or null / "Not enough elements"
+  
+  // Sort in descending order
+  let sorted = [...arr].sort((a, b) => b - a); // use spread to avoid changing original
+  
+  return sorted[1];
 			
 		}
 
